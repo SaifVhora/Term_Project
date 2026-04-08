@@ -1,117 +1,41 @@
 # SecondHand Marketplace
+**COSC-2956 Internet Tools — Term Project | Algoma University | Winter 2026**
 
-**COSC-2956 Internet Tools — Term Project**
-Algoma University
-
----
-
-## Project Description
-
-A full-stack web application for buying and selling second-hand items including electronics, clothing, books, vinyl records, and collectibles. Built with PHP, MySQL, Bootstrap 5, and JavaScript.
-
-### Features
-- User registration and login with hashed passwords
-- Browse and search listings by category
-- Product detail pages with add-to-cart
-- Shopping cart with quantity management
-- Checkout and order placement
-- Order history per user
-- Seller listing form with image URL preview
-- Admin dashboard: manage listings, orders, and users
+A PHP/MySQL web app where users can buy and sell second-hand items — electronics, clothing, books, vinyl, collectibles, and more.
 
 ---
 
-## Tech Stack
+## What it does
 
-| Layer      | Technology                     |
-|------------|--------------------------------|
-| Frontend   | HTML5, Bootstrap 5, JavaScript |
-| Backend    | PHP 8+                         |
-| Database   | MySQL (via PDO)                |
-| Dev Tools  | XAMPP, phpMyAdmin              |
+Users can register, log in, browse listings by category, search by keyword, add items to their cart, and place orders. Sellers can post their own listings with an image preview. 
 
 ---
 
-## Setup Instructions
+## Setup
 
-### 1. Clone the repository
-```bash
-git clone https://github.com/SaifVhora/marketplace.git
-```
+1. Clone the repo and drop the folder into `C:/xampp/htdocs/`
+2. Open phpMyAdmin → Import → select `marketplace_db.sql` → Go
+3. If your XAMPP MySQL runs on port 3307, open `includes/db.php` and update the port
+4. Visit `http://localhost/marketplace`
 
-### 2. Move to XAMPP htdocs
-Copy the `marketplace/` folder into:
-```
-C:/xampp/htdocs/marketplace/
-```
-
-### 3. Import the database
-1. Open **phpMyAdmin** → `http://localhost/phpmyadmin`
-2. Click **Import** → select `marketplace_db.sql` → click **Go**
-
-The SQL file includes `CREATE DATABASE` — no manual setup needed.
-
-### 4. Configure database connection
-Open `includes/db.php` — update port if needed (default is `3307` for XAMPP):
-```php
-"mysql:host=127.0.0.1;port=3307;dbname=marketplace_db;charset=utf8mb4"
-```
-
-### 5. Run the app
-Visit: `http://localhost/marketplace`
+**Test accounts:**
+| Role  | Email | Password |
+|-------|-------|----------|
+| Admin | admin@marketplace.com | admin123 |
+| User  | john@example.com | user123 |
 
 ---
 
-## Default Accounts
+## Built with
 
-| Role  | Email                 | Password  |
-|-------|-----------------------|-----------|
-| Admin | admin@marketplace.com | admin123  |
-| User  | john@example.com      | user123   |
+PHP 8, MySQL (PDO), Bootstrap 5, JavaScript, XAMPP
 
 ---
 
-## Project Structure
+## Demo
 
-```
-marketplace/
-├── index.php
-├── products.php
-├── product.php
-├── cart.php
-├── checkout.php
-├── orders.php
-├── sell.php
-├── login.php
-├── register.php
-├── logout.php
-├── admin/
-│   ├── index.php
-│   ├── products.php
-│   ├── orders.php
-│   └── users.php
-├── includes/
-│   ├── db.php
-│   ├── auth.php
-│   ├── header.php
-│   └── footer.php
-├── css/style.css
-├── js/main.js
-├── images/
-└── marketplace_db.sql
-```
+[Video link here](#)
 
 ---
 
-## Student Information
-
-- **Name:** Saif Vhora
-- **Course:** COSC-2956 Internet Tools
-- **Institution:** Algoma University
-- **Semester:** Winter 2026
-
----
-
-## Demo Video
-
-[Link to video](#)
+**Saif Vhora | github.com/SaifVhora/Term_Project**
