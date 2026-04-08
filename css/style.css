@@ -1,0 +1,43 @@
+/* SecondHand Marketplace - Custom Styles */
+
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.product-thumb {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  background-color: #e9ecef;
+}
+
+.navbar-brand {
+  font-size: 1.4rem;
+  letter-spacing: 0.5px;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12) !important;
+}
+
+.btn-dark { border-radius: 6px; }
+
+.table th { font-weight: 600; font-size: 0.9rem; }
+
+.alert { border-radius: 8px; }
+
+footer { margin-top: 60px; }
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #212529;
+  box-shadow: 0 0 0 0.2rem rgba(33,37,41,0.15);
+}
