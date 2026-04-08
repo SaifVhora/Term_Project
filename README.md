@@ -34,7 +34,7 @@ PHP 8, MySQL (PDO), Bootstrap 5, JavaScript, XAMPP
 
 ## Demo
 
-[Video link here](#)
+[https://drive.google.com/file/d/1JsQx0mzQyrAcbzTWW8VNwNrdpf2geO5P/view?usp=sharing](#)
 
 ---
 
